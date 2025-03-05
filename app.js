@@ -137,16 +137,19 @@ function updateTexts() {
   });
 }
 
-function updateLink() {
+  function updateLink() {
     // <a id="link" href="globo.com"></a>
-    const a = document.getElementById("link");
-    const b = document.getElementById("linkb");
+    const a = document.getElementById("link-hourglass");
+    const b = document.getElementById("link-itau");
+    const c = document.getElementById("link-pockit");
     if (currentLanguage === "pt") {
-        a.href = "uol.com.br";
-        b.href = "uol.com.br";
+        a.href = "https://www.behance.net/gallery/203766453/HourGlass-UXUI-Case-Study";
+        b.href = "https://www.behance.net/gallery/203825871/Projeto-Itau-UXUI-Case-Study";
+        c.href = "https://www.behance.net/gallery/215425643/Aplicativo-Pockit-Estudo-de-caso";
     } else {
-        a.href = "uol.com.br";    
-        b.href = "uol.com.br";
+        a.href = "https://dribbble.com/shots/24561262-HourGlass-Project-UX-UI-Case-Study";    
+        b.href = "https://dribbble.com/shots/24561367-UX-UI-Project-Improvement-of-the-Ita-customer-service-process";
+        c.href = "https://www.figma.com/proto/C846tEphfhZ96dlAIalcC1/Pockit?page-id=402%3A543&node-id=402-2558&p=f&viewport=653%2C370%2C0.12&t=RMmLxLjf8ZQZqlyE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=423%3A124";
     }
 }
 
