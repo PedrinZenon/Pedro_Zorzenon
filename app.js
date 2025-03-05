@@ -137,6 +137,19 @@ function updateTexts() {
   });
 }
 
+function updateLink() {
+    // <a id="link" href="globo.com"></a>
+    const a = document.getElementById("link");
+    const b = document.getElementById("linkb");
+    if (currentLanguage === "pt") {
+        a.href = "uol.com.br";
+        b.href = "uol.com.br";
+    } else {
+        a.href = "uol.com.br";    
+        b.href = "uol.com.br";
+    }
+}
+
 // Atualiza o conteúdo do botão de troca de idioma para exibir a imagem correspondente
 function updateLanguageToggleButton() {
   const languageToggle = document.getElementById("languageToggle");
