@@ -14,15 +14,6 @@
     }
 }
 
-.bg-black{
-  background: rgb(8,7,25) !important;
-  background: linear-gradient(30deg, rgb(14, 14, 24) 60%, rgb(24, 21, 9) 100%) !important;
-}
-
-.bg-dark{
-  background: rgb(18, 19, 32) !important;
-}
-
 .hidden{
   opacity: 0;
   filter: blur(5px);
@@ -67,6 +58,29 @@
       transform: translateX(-50%); /* Move o conteúdo para a esquerda */
     }
   }
+
+.gradiente-bg1{
+  background-color: #ca9904;
+  filter: blur(600px);
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: -1;
+}
+
+.bg-black{
+  background: rgb(9, 9, 27) !important;
+  background: linear-gradient(30deg, rgb(12, 12, 20) 60%, #3a331e 100%) !important;
+}
+
+.bg-warning{
+  background: rgb(14, 16, 26) !important;
+}
+
+.bg-dark{
+  background: rgb(20, 22, 41) !important;
+}
+
 
 .botaohero{
     width:100%;
