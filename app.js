@@ -154,6 +154,26 @@ function updateLink() {
   
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleciona todos os elementos clicáveis dentro de #navbarNav (links e botões)
+  const navCloseElements = document.querySelectorAll('#navbarNav a, #navbarNav button');
+  // Seleciona o container colapsável do menu
+  const navbarCollapse = document.getElementById('navbarNav');
+
+  navCloseElements.forEach(function(element) {
+    element.addEventListener('click', function() {
+      // Se o menu estiver aberto (classe "show" presente), feche-o
+      if (navbarCollapse.classList.contains('show')) {
+        let bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (!bsCollapse) {
+          bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+        }
+        bsCollapse.hide();
+      }
+    });
+  });
+});
+
 
 
 // Atualiza o conteúdo do botão de troca de idioma para exibir a imagem correspondente
