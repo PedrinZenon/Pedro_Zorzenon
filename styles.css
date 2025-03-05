@@ -70,7 +70,7 @@
 
 .bg-black{
   background: rgb(9, 9, 27) !important;
-  background: linear-gradient(30deg, rgb(12, 12, 20) 60%, #3a331e 100%) !important;
+  background: linear-gradient(30deg, rgb(9, 9, 14) 60%, #0e0d0b 100%) !important;
 }
 
 .bg-warning{
