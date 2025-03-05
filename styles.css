@@ -14,6 +14,15 @@
     }
 }
 
+.bg-black{
+  background: rgb(8,7,25) !important;
+  background: linear-gradient(30deg, rgb(14, 14, 24) 60%, rgb(24, 21, 9) 100%) !important;
+}
+
+.bg-dark{
+  background: rgb(18, 19, 32) !important;
+}
+
 .hidden{
   opacity: 0;
   filter: blur(5px);
