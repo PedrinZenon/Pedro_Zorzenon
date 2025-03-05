@@ -1,0 +1,141 @@
+.eu{
+    img{
+        border-radius: 800px;
+        width: 100%;
+        border: 1px solid rgb(255, 255, 255);
+    }
+}
+
+.eu2{
+    img{
+        border-radius: 220px;
+        width: 100%;
+        border: 1px solid #ffc107;
+    }
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(60%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0);
+  transition: all 1s;
+}
+
+/* Estilo do container do scroll */
+.scroll-container {
+    width: 100%;
+    overflow: hidden; /* Esconde o overflow */
+    white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
+  }
+  
+  /* Estilo do conteúdo do scroll */
+  .scroll-content {
+    display: inline-block;
+    animation: scroll 20s linear infinite; /* Animação do scroll */
+  }
+  
+  /* Estilo das imagens */
+  .scroll-content img {
+    width: 100px; /* Reduzi o tamanho das imagens */
+    margin-right: 60px; /* Aumentei o espaçamento entre as imagens */
+    border-radius: 10px; /* Adicionei bordas arredondadas */
+    object-fit: cover; /* Garante que as imagens mantenham a proporção */
+  }
+  
+  /* Animação do scroll */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Começa da posição inicial */
+    }
+    100% {
+      transform: translateX(-50%); /* Move o conteúdo para a esquerda */
+    }
+  }
+
+.botaohero{
+    width:100%;
+}
+
+.botao-idioma{
+  background-color: transparent;
+  border: none;
+}
+
+.project-cards{
+}
+
+.navbar-direita{
+  display: flex;
+  gap: 16px;
+}
+
+.estilonav{
+    background: rgba(255, 193, 7, 0.9) !important;
+box-shadow: 0 8px 32px 0 rgba(40, 40, 40, 0.37) !important;
+backdrop-filter: blur( 15.5px ) !important;
+-webkit-backdrop-filter: blur( 15.5px ) !important;
+}
+
+.texto-paragrafo{
+  color: rgb(197, 197, 197) !important;
+}
+
+.texto{
+    color: #383838 !important;
+    font-weight: 600 !important;
+    transition: 0.5s !important;
+}
+
+.texto:hover{
+    color: #000 !important;
+    text-decoration: underline !important;
+    transition: 0.5s !important;
+}
+
+.buttonhover div {
+    transition: transform 0.3s ease-in-out; /* Transição suave para o estado inicial */
+}
+
+.buttonhover:hover div {
+    transform: rotate(-45deg); /* Aplica a rotação diretamente no hover */
+}
+
+/* Estilo base da NavBar */
+#navbar {
+    width: 93%;
+    margin: 0 auto;
+    position: fixed; /* Fixa a NavBar no topo */
+    top: 0;
+    left: 0;
+    right: 11px;
+    z-index: 1000; /* Garante que a NavBar fique acima de outros elementos */
+    transition: transform 0.3s ease-in-out; /* Suaviza a transição */
+  }
+  
+  /* Classe para esconder a NavBar */
+  .navbar-hidden {
+    transform: translateY(-150%); /* Move a NavBar para cima, escondendo-a */
+  }
+  
+  /* Classe para mostrar a NavBar */
+  .navbar-visible {
+    transform: translateY(0); /* Move a NavBar para a posição original */
+  }
+
+@media (min-width: 992px){
+    .botaohero{
+        width: inherit;
+    }
+
+    .scroll-content img {
+        margin-right: 200px;
+      }
+}
+
