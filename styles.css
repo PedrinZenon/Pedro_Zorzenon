@@ -186,10 +186,19 @@ backdrop-filter: blur( 15.5px ) !important;
     .botaohero{
         width: inherit;
     }
-
     .scroll-content img {
         margin-right: 200px;
       }
+}
+
+@media (max-width: 992px){
+    
+    .mensagem-de-sucesso{
+        font-size: 14px;
+    }
+    .w-btn-enviar{
+        width: 100% !important;
+    }    
 }
 
 .mensagem-de-sucesso{
@@ -203,4 +212,3 @@ backdrop-filter: blur( 15.5px ) !important;
     border: 1px solid #E6AE06;
     border-radius: 25px;
 }
-
