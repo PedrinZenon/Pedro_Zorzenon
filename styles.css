@@ -27,36 +27,37 @@ body {
 
 .glow {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  background: #E6AE06;
-  border-radius: 50%;
-  filter: blur(400px);
-  pointer-events: none;
+    border-radius: 50%;
+    pointer-events: none;
 }
 
-/* Posicionamento das luzes */
 .glow:nth-child(1) {
-  top: -106px;
-  left: 78%;  
+  top: -10vh;
+  left: 78vw;  
+  width: 30vw; /* Ajuste proporcional ao tamanho da tela */
+  height: 30vw;
+  background: #E6AE06;
+  filter: blur(25vw);
 }
 
+/* Luz 2 */
 .glow:nth-child(2) {
-  top: 30%;
-  left: 10%;
-  width: 200px;
-  height: 200px;
+  top: 200vh;
+  left: 10vw;
+  width: 15vw;
+  height: 15vw;
   background: #E6AE06;
-  filter: blur(270px);
+  filter: blur(20vw);
 }
 
+/* Luz 3 */
 .glow:nth-child(3) {
-  top: 85%;
-  left: 40%;
-  width: 300px;
-  height: 300px;
+  bottom: 100px;
+  left: 40vw;
+  width: 22vw;
+  height: 22vw;
   background: #E6AE06;
-  filter: blur(400px);
+  filter: blur(30vw);
   z-index: -10;
 }
 
